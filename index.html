@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>STUDENT'S FORM</h1>
+      <div class="indication"><small>*</small> Indicates a required Field</div>
+      <form action="">
+        <div class="firstname">
+          <label for="firstname">Student's First Name <small>*</small></label>
+          <input type="text" placeholder="Enter Your first name" required />
+        </div>
+        <div class="lastname">
+          <label for="lastname">Students's Last Name <small>*</small></label>
+          <input type="text" placeholder="Enter Your Last Name" required />
+        </div>
+        <div class="email">
+          <label for="email">Student's Email <small>*</small></label>
+          <input type="email" placeholder="Enter Your Email" required />
+        </div>
+        <div class="gender">
+          <label for="gender">Student's Gender <small>*</small></label>
+          <select name="sex" id="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="none" selected></option>
+          </select>
+        </div>
+        <div class="guardian">
+          <label for="guardian">Guardian's name <small>*</small></label>
+          <input type="text" placeholder="Guardian's name" required />
+        </div>
+        <div class="guardianaddress">
+          <label for="guardianaddress">Guardian's Address</label>
+          <input type="text" placeholder="Guardian's Address" />
+        </div>
+        <div class="age">
+          <label for="age">Studen's Age</label>
+          <input type="month" name="age" id="stundentage" />
+        </div>
+        <div class="state">
+          <label for="state">Student's State</label>
+          <select name="state" id="location">
+            <option value="Imo">Imo</option>
+            <option value="Abia">Abia</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Rivers">Rivers</option>
+          </select>
+        </div>
+        <div class="submit" id="send">
+          <input type="submit" value="SUBMIT" />
+          <input type="reset" value="RESET" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
